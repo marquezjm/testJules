@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.checkbox-field-container label {
+  display: flex; // Align checkbox and label nicely
+  align-items: center;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
