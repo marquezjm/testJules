@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  margin-bottom: 15px;
+}
+
+label.main-label { // For the main label of the radio group
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+div.radio-option { // To wrap each radio input + label
+  margin-bottom: 5px;
+
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  label { // For labels of individual radio options
+    font-weight: normal;
+  }
+}

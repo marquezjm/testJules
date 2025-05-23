@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-family: monospace; // Good for JSON
+  box-sizing: border-box; // Ensures padding doesn't add to width
+}
+
+button[type="button"] {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.dynamic-components-container {
+  margin-top: 20px;
+  border-top: 1px dashed #eee;
+  padding-top: 20px;
+}

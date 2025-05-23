@@ -1,0 +1,11 @@
+<form [formGroup]="dynamicControlsForm">
+  <div>
+    <label for="jsonInput">JSON Configuration:</label><br>
+    <textarea id="jsonInput" [(ngModel)]="jsonInput" (ngModelChange)="onJsonInputChange()" [ngModelOptions]="{standalone: true}" rows="10" cols="80"></textarea>
+    <div *ngIf="jsonParseError" style="color: red; margin-top: 5px;">{{ jsonParseError }}</div>
+  </div>
+  <button type="button" (click)="renderComponents()">Update Form</button> <!-- Kept as per instruction -->
+  <div class="dynamic-components-container" #dynamicComponentContainer></div>
+</form>
+
+<pre>{{ dynamicControlsForm.value | json }}</pre>
